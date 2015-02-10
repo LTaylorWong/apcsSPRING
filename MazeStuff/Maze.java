@@ -50,15 +50,15 @@ public class Maze {
     
     public void solve(int x, int y){
 	try{
-	    Thread.sleep(100);
+	    Thread.sleep(50);
 	}catch(Exception e){
 	}
-	if (board[x][y]==wall||board[x][y]==me||board[x][y]==visited)
-	    return;
 	if (board[x][y]==exit){
 	    System.out.println(this);
 	    System.exit(0);
 	}
+	if (board[x][y] != path)
+	    return;
 	System.out.println(this);
 	board[x][y]=me;
 	solve(x+1,y);
