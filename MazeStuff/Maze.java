@@ -10,7 +10,13 @@ public class Maze {
     private char path='#';
     private char me = 'L';
     private char visited='.';
-    
+    private boolean solved=false;
+
+    public void delay(int n){
+	try {
+	    Thread.sleep(n);
+	} catch (Exception e) {}
+    }
     public Maze() {
 	maxX=40;
 	maxY=20;
@@ -49,16 +55,13 @@ public class Maze {
     
     
     public void solve(int x, int y){
-	try{
-	    Thread.sleep(50);
-	}catch(Exception e){
-	}
 	if (board[x][y]==exit){
 	    System.out.println(this);
-	    System.exit(0);
+	    solved=true;
 	}
 	if (board[x][y] != path)
 	    return;
+	delay(100);
 	System.out.println(this);
 	board[x][y]=me;
 	solve(x+1,y);
@@ -66,7 +69,9 @@ public class Maze {
 	solve(x,y+1);
 	solve(x,y-1);
 	board[x][y]=path;
-	board[x][y]=visited;
+	if (!solved){
+	    board[x][y]=visited;
+	}
     }
     public static void main(String[] args){
 	Maze m = new Maze();
