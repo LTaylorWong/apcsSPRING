@@ -5,7 +5,8 @@ import java.io.*;
 public class Cows{
 
     private int R, C, E, N;
-    private int[][]field;
+    private int[][] field;
+    private int[] nums;
 
     public Cows(int numRows, int numCol, int elevation, int numMoves){
 	R=numRows;
@@ -27,7 +28,21 @@ public class Cows{
 	    System.out.printf("\n");
 	}
     }
-	
+    
+    public void stomp(int x, int y, int m){
+	nums = new int[9];
+	int k=x;
+	int j=y;
+	int p=0;
+	while (int p<=9){
+	for(int k;k<field.length;k++){
+	    for(int j; j<field[k].length;c++){
+		nums+=field[k][j];
+		p++;
+	    }
+	}
+	}
+    
 
 	//-------------[MAIN]---------------
 
