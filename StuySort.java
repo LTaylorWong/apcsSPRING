@@ -9,7 +9,10 @@ public class StuySort{
 	y=nums;
     }
     
-    public ArrayList<Integer> merger(ArrayList<Integer> nums)
+    public ArrayList<Integer> merger(ArrayList<Integer> x){
+	if (x.size()<=1){
+	    return x;
+	}else {
 
 
 
