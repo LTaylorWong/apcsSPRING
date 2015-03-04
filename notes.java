@@ -23,5 +23,6 @@ Big O notation (order notation)
    function f(n) is said to be O(g(n)) [order g(n) or Big O g(n) ]
    if there exists some constant k such that K(g(n))> f(n) and the 
    long term.
+   tight upper bound
  
  */
