@@ -10,3 +10,13 @@ system.out.printf()
          -sorts recursively
 	 -breaks apart the given set to sort and then merge
 */
+
+/*
+merge sort
+splits/levels logBASE2(1)
+each split loops thru array n
+
+linear search: n
+binary search: logN
+ 
+ */
