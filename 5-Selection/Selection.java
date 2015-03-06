@@ -15,9 +15,14 @@ public class Selection{
     }
     
     public int pivot(){
+        //chooses a pivot index
             Random r = new Random();
             int n = r.nextInt(data.length)+1;
-            p = n;
+            p=data[n];
+    }
+    
+    public void partition(){
+        //partitions the data set to those higher and lowerr than the pivot index
     }
 //-----[Main]-------
 public static void main(String[] args){
