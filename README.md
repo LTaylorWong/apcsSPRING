@@ -4,7 +4,7 @@ APCS Spring '15
 
  <html>
 <marquee>COMP SCI NOTES</marquee>
-<b>system.out.printf()</b>
+<br><b>system.out.printf()</b>
             <ul>-prints on the same line</ul>
 	    <ul>-placeholders: %s (string) %d(int) %f(floting point number)</ul>
 	    <ul>-%n_s/d/f leaves n number of spaces for each string/int/float</ul>
