@@ -9,6 +9,6 @@ public class Driver{
 
 	n.setNext(n2);
 	System.out.println(n.getNext().getData());
-	System.out.println(n.getNExt());
+	System.out.println(n.getNext());
 		
 }
