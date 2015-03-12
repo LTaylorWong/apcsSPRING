@@ -10,5 +10,15 @@ public class Driver{
 	n.setNext(n2);
 	System.out.println(n.getNext().getData());
 	System.out.println(n.getNext());
+
+	//----------------
+
+	n.getNext().setData("pickle");
+	System.out.println(n2);
+	System.out.println(n.getNext.getData());
+
+	n2.setData("watermelon");
+	Systyem.out.println(n.getNext().getData());
+	
 		
 }
