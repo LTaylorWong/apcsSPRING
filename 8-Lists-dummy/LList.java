@@ -39,10 +39,15 @@ public class LL {
     }
 
     public void remove(int n) {
-	Node before = get(n - 1);
-	Node after = get(n + 1);
-	before.setNext(after);
-	len--;
+	if(n>=this.len||n<0)
+	    return;
+	Node temp = start;
+	for(int i=0; i<n-1;i++){
+	    temp=temp.getNext();
+	}
+	String s = temp.getNext().getData();
+	temp.setNext(temp.getNext().getNext());
+	return s;
     }
     
     public int getLength() {
