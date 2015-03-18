@@ -29,13 +29,13 @@ public class LL {
     }
 
     public void add(int n, String s) {
-	Node added = new Node(s);
+	Node add = new Node(s);
 	Node before = get(n - 1);
 	System.out.println(before);
 	Node after = get(n);
 	System.out.println(after);
-	added.setNext(after);
-	before.setNext(added);	
+	add.setNext(after);
+	before.setNext(add);	
     }
 
     public void remove(int n) {
