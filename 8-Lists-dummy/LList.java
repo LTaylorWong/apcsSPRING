@@ -1,4 +1,4 @@
-public class LL {
+public class LList {
     
     private Node start,end;
     private int len;
