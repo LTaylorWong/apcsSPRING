@@ -1,34 +1,45 @@
-public class myQueue{
+public class myQueue<E>{
 
     public Node<E> start;
     public Node<E> end;
 
-    public myStack(){
-      	start= null;
-	end=null;
-	start.setNext(end);
+    public myQueue(){
+      	start = new Node<E>();
+	end= new Node<E>();
+	end.setNext(start);
     }
 
     public void enqueue(E data){
 	Node<E> tmp=new Node<E>(data);
-	end.setNext(tmp);
+	tmp.setNext(end);
 	end=tmp;
-	//adding to the back
     }
 
     public E dequeue(){
 	E tmp= start.getData();
 	start=start.getNext();
 	return tmp;
-	}
+    }
 
     public boolean empty(){
-	return start=null;
+	return start==null;
     }
 
     public E head(){
 	E tmp= start.getData();
 	return tmp;
     }
+    
+    public String toString(){
+	String s = "";
+	Node<E> tmp;;
+	for (tmp = start.getNext() ; tmp!=null ; tmp=tmp.getNext()){
+	    s = s + tmp + " --> ";
+	}
+	s= s+ end; 
+	//s = s + "null";
+	return s;
+    }
+
     
 }
