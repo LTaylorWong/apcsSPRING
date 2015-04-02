@@ -1,19 +1,20 @@
+
 import java.util.*;
 
 public class myQueue<E> {
 
-    private MazeNode head;
-    private MazeNode tail;
+    private Node<E> head;
+    private Node<E> tail;
     private int size;
 
     public myQueue(){
-	head = new MazeNode();
+	head = new Node<E>();
 	tail = head;
 	size = 0;
     }
 
     public void enqueue(int x, int y){
-	MazeNode tmp = new MazeNode(x,y);
+	Node<E> tmp = new Node<E>(data);
 	if (size == 0){
 	    head = tmp;
 	    tail = tmp;
@@ -28,7 +29,7 @@ public class myQueue<E> {
     public int[] dequeue(){
 	if (empty())
 	    throw new NoSuchElementException();
-	int[] coor = head.getData();
+	int[] data = head.getData();
 	if (head == tail){
 	    head.setData(null);
 	    tail.setData(null);
@@ -46,7 +47,7 @@ public class myQueue<E> {
     public int[] head(){
 	if (empty())
 	    throw new NoSuchElementException();
-	int[] coor = head.getData();
+	int[] data = head.getData();
 	return data;
     }
 
@@ -56,7 +57,7 @@ public class myQueue<E> {
 
     public String toString(){
 	String s = "";
-	MazeNode iter = head;
+	Node<E> iter = head;
 	while (iter != null){
 	    s+= iter + " --> ";
 	    iter = iter.getNext();
