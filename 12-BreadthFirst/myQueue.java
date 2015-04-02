@@ -1,20 +1,19 @@
 
 import java.util.*;
 
-public class myQueue<E> {
+public class myQueue {
 
-    private Node<E> head;
-    private Node<E> tail;
+    private MazeNode head;
+    private MazeNode tail;
     private int size;
 
     public myQueue(){
-	head = new Node<E>();
+	head = new MazeNode();
 	tail = head;
 	size = 0;
     }
 
-    public void enqueue(int x, int y){
-	Node<E> tmp = new Node<E>(data);
+    public void enqueue(int x, int y,int[] bounds){
 	if (size == 0){
 	    head = tmp;
 	    tail = tmp;
@@ -57,7 +56,7 @@ public class myQueue<E> {
 
     public String toString(){
 	String s = "";
-	Node<E> iter = head;
+	MazeNode iter = head;
 	while (iter != null){
 	    s+= iter + " --> ";
 	    iter = iter.getNext();

@@ -56,12 +56,18 @@ public class Maze {
     
     
     public void solve(int x, int y){
+	int[] Current= new int[2];
+	ArrayList<List> Processed = new ArraryList<List>();
+	while(solved==false){
 	frontier.enqueue(x,y);
+	Current=frontier.dequeue();
 	frontier.enqueue(x+1,y);
 	frontier.enqueue(x,y+1);
 	frontier.enqueue(x-1,y);
 	frontier.enqueue(x,y-1);
-	MazeCurrent current = new MazeNode(x,y);
+	Processed.add(Current);
+	}
+	    
 	
     }
     public static void main(String[] args){
