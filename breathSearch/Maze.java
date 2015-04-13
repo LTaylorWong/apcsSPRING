@@ -83,7 +83,7 @@ public class Maze {
 	board[x][y]='x';
 	Node current =null;
        
-	While(!f.isEmpty()){
+	while(!f.isEmpty()){
 	    current =f.remove();
 	    int cx = current.getX();
 	    int cy = current.getY();
@@ -107,6 +107,7 @@ public class Maze {
 	    delay(50);
 	    Sytstem.out.println(this);
 	    
+	}
     }
 
     public static void main(String[] args){
