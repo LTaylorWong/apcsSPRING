@@ -89,7 +89,24 @@ public class Maze {
 	    int cy = current.getY();
 	    
 	    board[cx][cy] = 'z';
+	    Node tmp;
+	    
+	    tx = cx +1;
+	    ty = cy;
+	    if (board[tx][ty]=='#'|| board[tx][ty]=='$'){
+		tmp = new Node (tx,ty);
+		f.add(tmp);
+	    }
+	    tx = cx;
+	    ty = cy-1;
+	    if (board[tx][ty]=='#'|| board[tx][ty]=='$'){
+		tmp = new Node (tx,ty);
+		f.add(tmp);
+	    }
 
+	    delay(50);
+	    Sytstem.out.println(this);
+	    
     }
 
     public static void main(String[] args){
