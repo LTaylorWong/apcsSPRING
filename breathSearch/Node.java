@@ -9,15 +9,15 @@ public class Node{
 	this.y=y;
     }
 
-    public int getX{
+    public int getX(){
 	return x;
     }
 
-    public int getY{
+    public int getY(){
 	return y;
     }
 
-    public Node getPrev{
+    public Node getPrev(){
 	return prev;
     }
 }
