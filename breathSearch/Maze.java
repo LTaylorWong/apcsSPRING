@@ -91,8 +91,8 @@ public class Maze {
 	    board[cx][cy] = 'z';
 	    Node tmp;
 	    
-	    tx = cx +1;
-	    ty = cy;
+	    int tx = cx +1;
+	    int ty = cy;
 	    if (board[tx][ty]=='#'|| board[tx][ty]=='$'){
 		tmp = new Node (tx,ty);
 		f.add(tmp);
@@ -105,7 +105,7 @@ public class Maze {
 	    }
 
 	    delay(50);
-	    Sytstem.out.println(this);
+	    System.out.println(this);
 	    
 	}
     }
