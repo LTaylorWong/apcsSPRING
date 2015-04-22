@@ -19,4 +19,6 @@ Ancestors---> any node on the path from n to the root
 
 Descendants--->children, their children etc.
 
+<b>Binary Trees</b> Each node is a leaf or has one or two children
+
 </html>
