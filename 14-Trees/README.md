@@ -4,4 +4,12 @@
 <ul> <b>Graph:</b> a collection of nodes and edges (vertices)</ul> 
 <ul> node---> holds stuff</ul>
 <ul> edge---> connects nodes</ul>
+
+root
+child 
+Parent
+Leaf---> node w/ no children
+Siblings---> from the same parent
+Ancestors---> any node on the path from n to the root
+descendants--->children, their children etc.
 </html>
