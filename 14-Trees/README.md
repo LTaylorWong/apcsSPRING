@@ -5,9 +5,9 @@
 <ul> node---> holds stuff</ul>
 <ul> edge---> connects nodes</ul>
 
-root
+Root
 
-child 
+Child 
 
 Parent
 
@@ -16,6 +16,6 @@ Siblings---> from the same parent
 
 Ancestors---> any node on the path from n to the root
 
-descendants--->children, their children etc.
+Descendants--->children, their children etc.
 
 </html>
