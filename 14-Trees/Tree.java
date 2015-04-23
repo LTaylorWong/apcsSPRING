@@ -14,7 +14,9 @@ public class Tree{
 
     public void insert(Node T){
 	if(T==null){
-	    //print T to hte node yuo're inserting
+	    //print T to the node you're inserting
+	    System.out.println(T);
+	    
 	}
 	//insert as new leaf
 	     //create new Node n
