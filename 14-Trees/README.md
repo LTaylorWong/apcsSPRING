@@ -20,5 +20,7 @@ Ancestors---> any node on the path from n to the root
 Descendants--->children, their children etc.
 
 <b>Binary Trees:</b> Each node is a leaf or has one or two children
+<ul>given any node with value V, all the nodes in the left subtree have values <V and all nodes in the right subtree have values >V</ul>
 
+      
 </html>
