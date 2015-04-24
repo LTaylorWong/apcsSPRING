@@ -22,5 +22,7 @@ public class Tree{
 	     //create new Node n
 	     //search for the value of n
     }
-    
+
+    public void search(){
+    }
 }
