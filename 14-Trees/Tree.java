@@ -1,5 +1,10 @@
+import java.io.*;
+import java.util.*;
+
 public class Tree{
     
+    Node r;
+
     public node search(Node T, Integer i){
 	while (T!=null){
 	    int c=T.getData().compareTo(i);
