@@ -72,4 +72,15 @@ public class Tree{
 	//     T2.setRight(i);
 	// }
     }
+
+    public Node cSearch(Node t, int i){
+	if (t==null|| t.getData()==i){
+	    return t;
+	}
+	else if (i<t.getData()){
+	    return search(t.getDataLeft(),i);
+	}else {
+	    return search (t.getDataRight(),i);
+	}
+    }
 }
