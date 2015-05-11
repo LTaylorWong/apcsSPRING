@@ -70,7 +70,7 @@
 <br><b>Maze Herristics:</b>
 <ul> distance formula (euclidean)</ul>
 <ul> manhattan (taxi cab) distance (abs(diff in x)+abs(diff in y))</ul>
-</center>
+
 <br>
 <br><b>Trees:</b>
 <ul> <b>Graph:</b> a collection of nodes and edges (vertices)</ul> 
@@ -89,6 +89,18 @@ Siblings---> from the same parent
 Ancestors---> any node on the path from n to the root
 
 Descendants--->children, their children etc.
+<br>
+<br>
+<b>finding numNodes in a tree:</b>
+<br>base case: return 0 if null;
+<br>recursion: return 1+numNodes(left); 1+numNodes(right);
+<br> public int numNodes(tree t){
+	<br>if (T==null){
+	<br>	return 0;
+	<br>}else{
+	<br>	T.getdata()+numNodes(T.getleft())
+	<br>	+numNodes(T.getright())
+</center>
 </html>
  
  
