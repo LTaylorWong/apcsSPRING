@@ -71,12 +71,17 @@ public class BST{
     }
     
     //height
-
+    public int height(Tree T){
+    }
     //longest leaf to leaf path
+    public int longestPath(Tree T){
+    }
     /* split dupes:
        parent and leaf have the same value--->
        inserts a new node between them that is one less than that value
      */
+    public void splitDupes(Tree T){
+    }
 		
 		
     //-------------[Main]---------------    
