@@ -61,7 +61,13 @@ public class BST{
 
     //max value from tree
     public int maxVal(Tree T){
-    
+	//get the farthest right val
+	if (T.getRight==null){
+	    return 0;
+	}else{
+	    return maxVal(T.getRight);
+	}
+	    
     }
     
     //height
