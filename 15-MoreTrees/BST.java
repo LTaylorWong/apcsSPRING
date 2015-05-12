@@ -60,21 +60,38 @@ public class BST{
     }
 
     //max value from tree
-    public int maxVal(Tree T){
+    public int maxVal(Node T){
 	//get the farthest right val
-	if (T.getRight==null){
+	if (T==null){
 	    return 0;
 	}else{
-	    return maxVal(T.getRight);
+	    return max(maxVal(T.getRight()),
+		       maxVal(T.getLeft()),
+		       maxVal(T.getData());
+	  
 	}
 	    
     }
     
     //height
     public int height(Tree T){
+	if (T==null){
+	    return 0;
+	}else {
+	    return 1+ max(height(T.getLeft()),
+			  height(T.getRight()));
+	}
     }
     //longest leaf to leaf path
-    public int longestPath(Tree T){
+    public int diameter(Tree T){
+	if(T==null){
+	    return 0;
+	}else{
+	   int  pl1 = height(T.getLeft())+height(T.getRight())*2;
+	   int  pl2 = diameter(T.getLeft());
+	   int  pl3 = diameter(T.getRight());
+	   return max(pl1,pl2,pl3);
+	}
     }
     /* split dupes:
        parent and leaf have the same value--->
