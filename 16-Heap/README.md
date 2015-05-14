@@ -9,10 +9,10 @@
       <ol>1.remove min</ol>
       <ol>2.replace with lowest right value</ol>
       <ol>3.pushdown: swap the root with the smaller childand continue down until we're done</ol>
-     <h2>Insert:</h2>
+  <h2>Insert:</h2>
        <ol>1.add new lowest left node</ol>
        <ol>2.sift up</ol>
-     <h2>~Runtimes~</h2>
+  <h2>~Runtimes~</h2>
       find min: O(1)
       <br>--------------
       <br>remove min,
