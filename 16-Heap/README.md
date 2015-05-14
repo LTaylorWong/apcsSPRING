@@ -1,5 +1,5 @@
 #HEAP THINGS
-====
+----
 <h2>Characteristics</h2>
     Each Child is greater that the parent
     each has full possible left and right
