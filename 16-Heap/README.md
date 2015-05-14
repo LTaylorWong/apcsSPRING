@@ -1,5 +1,4 @@
-public class Heap{
- /* Tree:
+ Tree:
                 3
 	    /       \
 	   7         12
@@ -33,6 +32,4 @@ public class Heap{
       insert: O(log n)
       ---------------
       heapSort: O(nlogn)
-     */
-}
-
+     
