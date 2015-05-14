@@ -1,4 +1,4 @@
- <h1>HEAP THINGS</h1>
+#HEAP THINGS
 ====
 <h2>Characteristics</h2>
     Each Child is greater that the parent
