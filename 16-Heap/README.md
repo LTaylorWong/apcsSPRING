@@ -1,35 +1,23 @@
- Tree:
-                3
-	    /       \
-	   7         12
-	 /   \       / \
-       15     8     17 19
-       / \   / \    / 
-      16 22 13 21  30
-     */
-
-    /*
-      Each Child is greater that the parent
-      each has full possible left and right
-      given node n, n'a children are 2n, 2n+1
-     */
-    /* Remove:
-      1.remove min
-      2.replace with lowest right value
-      3.pushdown: swap the root with the smaller childand continue down
-      until we're done
-     */
-    /* Insert:
-       1.add new lowest left node
-       2.sift up
-     */
-    
-    /* ~Runtimes~
+#HEAP THINGS
+----
+<h2>Characteristics</h2>
+    Each Child is greater that the parent
+    each has full possible left and right
+    given node n, n'a children are 2n, 2n+1
+     
+  <h2>  Remove:</h2>
+      <ol>1.remove min</ol>
+      <ol>2.replace with lowest right value</ol>
+      <ol>3.pushdown: swap the root with the smaller childand continue down until we're done</ol>
+  <h2>Insert:</h2>
+       <ol>1.add new lowest left node</ol>
+       <ol>2.sift up</ol>
+  <h2>~Runtimes~</h2>
       find min: O(1)
-      --------------
-      remove min,
-      push down,
-      insert: O(log n)
-      ---------------
-      heapSort: O(nlogn)
+      <br>--------------
+      <br>remove min,
+      <br>push down,
+      <br>insert: O(log n)
+      <br>---------------
+      <br>heapSort: O(nlogn)
      
