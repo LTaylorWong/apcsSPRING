@@ -28,9 +28,17 @@ hash function h(x) a mapping function, takes a piece of information and converts
 	}
 	
 #Closed Hashing 
+
 everything is stored in array
+
 Collision:
 
 	-Rehashing
 
 	-Linear probing
+	
+	-Leave space in the table using a multiplier
+	
+#Runtime
+insert: expected constant time
+retrival: expect constant time
