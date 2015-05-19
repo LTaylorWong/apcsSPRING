@@ -12,11 +12,12 @@ hash function h(x) a mapping function, takes a piece of information and converts
 		h(x)=x%10,000
 		h(x)=multiply/add all non-zero digits to x%10,000
 
-PROBLEM: multiple object can hash to the same index (collision)
+#PROBLEM: multiple object can hash to the same index (collision)
 
 	hash table's array has to be sufficiently large (sparsely populated)
 	hash function should do a good job distributing items in the table
-pseudo code:
+
+#pseudo code:
 
 	int hash(string s){
 		h=1;
@@ -25,3 +26,10 @@ pseudo code:
 		}
 		return h % tablesize
 	}
+	
+#Closed Hashing 
+everything is stored in array
+
+Collision:
+	-Rehashing
+	-Linear probing
