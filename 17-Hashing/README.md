@@ -17,6 +17,7 @@ PROBLEM: multiple object can hash to the same index (collision)
 	hash table's array has to be sufficiently large (sparsely populated)
 	hash function should do a good job distributing items in the table
 pseudo code:
+
 	int hash(string s){
 		h=1;
 		for (i=0 to s.length){
