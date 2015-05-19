@@ -41,4 +41,5 @@ Collision:
 	
 #Runtime
 insert: expected constant time
+
 retrival: expect constant time
