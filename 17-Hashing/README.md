@@ -29,7 +29,8 @@ hash function h(x) a mapping function, takes a piece of information and converts
 	
 #Closed Hashing 
 everything is stored in array
-
 Collision:
+
 	-Rehashing
+
 	-Linear probing
