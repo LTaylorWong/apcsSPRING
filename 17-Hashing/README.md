@@ -40,6 +40,7 @@ Collision:
 	-Leave space in the table using a multiplier
 	
 <b>Runtime</b>
+
 insert: expected O(1)
 
 retrival: expect O(1)
@@ -49,6 +50,7 @@ retrival: expect O(1)
 each and every element is a "pointer to" a linked list of values that hash to that element
 
 <b>Runtime</b>
+
 insert: O(1) ALWAYS CONSTANT TIME
 
 retrival: expected O(1), O(n) with respect to length(n) of linked list @ current location
